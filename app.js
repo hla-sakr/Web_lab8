@@ -1,37 +1,3 @@
-// // const names= require( './names.js')
-// // const functions= require( './functions.js')
-
-// // console.log("Hello, World!");
-
-
-// // // console.log(__dirname);
-// // // console.log(__filename);
-// // //console.log(module);
-// // functions.sayHi(names.name1);
-// // functions.sayHi(names.name2);
-// //used to create a server
-// const http= require('http');
-
-// function processincomingrequest(req, res) {
-//     if (req.url === "/") {    res.end("welcome to my homepage");
-//     } else if (req.url === "/settings") {
-//         res.end("Hello, welcome to settings page");
-//     } else {
-//         res.end("Page not found");
-//     }
-
-//     console.log ("incoming req");
-//     console.log(req.url);
-// }
-
-// const server=  http.createServer((req, res) => {
-//     processincomingrequest(req, res);
-// });
-
-// server.listen(5000, () => {
-//     console.log("Server listening on port 5000");
-// })  
-
 const express= require('express');
 const app= express();
 app.use(express.json());
